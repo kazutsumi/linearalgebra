@@ -7,4 +7,4 @@
 TeX内で [enumitem](https://www.ctan.org/pkg/enumitem) と [emathEy](http://emath.s40.xrea.com/) を使用しています．
 
 
-[微分積分板](https://github.com/kazutsumi/calculus){:target="_blank"}も作成中です．
+[微分積分板](https://github.com/kazutsumi/calculus) も作成中です．

@@ -124,11 +124,61 @@
 
 \end{enumerate}
 
+\section{行列の基本変形}\label{sec:transform}
+
+\begin{enumerate}[label=\ref{sec:transform}.\arabic*]
+  \setlength{\itemsep}{1zh}
+  
+\item
+
+\item
+
+\item
+  
+\end{enumerate}
+
+\newpage
+
 \section{連立1次方程式}\label{sec:system}
 
 \begin{enumerate}[label=\ref{sec:system}.\arabic*]
+
   \setlength{\itemsep}{1zh}
 
+
+\item 次の行列 $A, B$ に対して，$AX=B$ を満たす行列 $X$ を全て求めよう．
+
+  \vspace{1ex}
+  
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1zh}
+    
+  \item $A= \left[
+      \begin{array}{rr}
+        1 & 2\\
+        3 & 4
+      \end{array}
+    \right] , \quad B=\left[
+      \begin{array}{rr}
+        9 & 5\\
+        21 & 9
+      \end{array}
+    \right]$
+
+  \item $A=\left[
+      \begin{array}{ccc}
+        1 & 2 & 3\\
+        4 & 5 & 6\\
+        7 & 8 & 9
+      \end{array}
+    \right], \quad B=\left[
+      \begin{array}{rrr}
+        -3 & 6 & 4\\
+        3 & 9 & 16\\
+        9 & 12 & 28
+      \end{array}
+    \right]$
+  \end{enumerate}
 
 \item 以下を満たす $3$ 次関
   数 $f(x)=a_0 + a_1 x + a_2 x^2 + a_3 x^3$ の係数を決定しよう．
@@ -136,9 +186,33 @@
     f(1)=1, \quad f(2)=2, \quad f'(1)=2, \quad f'(2)=3
   \]
   
-\item 行基本変形と基本行列に関する問題を作りたい
+\item $xy$ 平面において $a x^2 + bxy + cy^2 + dx + ey + f=0$ という形
+  の $2$ 次方程式によって定まる曲線を $2$ 次曲線という．以下
+  の $5$ 点 A, B, C, D, E を通る $2$ 次曲線の方程式を求めよう．
+  \[
+    \textrm{A}(3,-1), \quad \textrm{B}(2,2), \quad \textrm{C}(-4,-1),
+    \quad \textrm{D}(-1,-2), \quad \textrm{E}(0,-4)
+  \]
+
+\item 4つの物質 A, B, C, D を含む混合溶液 W, X, Y, Z がある．これら4つ
+  の混合溶液を適切な割合で混ぜ合わせて新たな溶液 $\Omega$ を作りたい．
+  以下の表は各溶液 W, X, Y, Z とこれから作りたい溶液 $\Omega$ の100gあ
+  たりに含まれる物質 A, B, C, D の含有量（単位はg）を表したものである．
+  各溶液を混ぜ合わせることで化学反応等による質量欠損は起きないものとし
+  て，混ぜ合わせる溶液 W, X, Y, Z の適切な割合を求めよう．
+\begin{table}[h]
+  \centering
+  \begin{tabular}{ccccc|c}
+    & W & X & Y & Z & $\Omega$\\ \hline
+    A & 2.00 & 1.00 & 4.00 & 9.00 & 3.00\\ \hline
+    B & 7.00 & 10.0 & 1.00 & 2.00 & 6.00\\ \hline  
+    C & 2.00 & 2.00 & 2.00 & 2.00 & 2.00 \\ \hline
+    D & 4.00 & 8.00 & 10.0 & 7.00 & 7.00\\ 
+  \end{tabular}
+\end{table}
+
   
-\item $\bm{a}_1 = \left[
+\item ${}^{t}\bm{a}_1 = \left[
     \begin{array}{r}
       2\\
       2\\
@@ -164,6 +238,7 @@
       
   \vspace{1zh}
 
+  
   \begin{enumerate}[label=(\arabic*)]
     \setlength{\itemsep}{1ex}
     

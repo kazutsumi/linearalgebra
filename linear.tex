@@ -324,7 +324,7 @@
 \end{table}
 
   
-\item ${}^{t}\bm{a}_1 = \left[
+\item $\bm{a}_1 = \left[
     \begin{array}{r}
       2\\
       2\\
@@ -430,7 +430,7 @@
   を $\bm{a}$ と $\bm{b}$ の外積という．（$\bm{e}_1, \bm{e}_2,
   \bm{e}_3$ を形式的に数のように扱って行列式を計算する）
 
-  \vspace{1zh}
+  \vspace{1ex}
 
   \begin{enumerate}[label=(\arabic*)]
     \setlength{\itemsep}{1ex}
@@ -477,7 +477,53 @@
       
   \end{enumerate}
   
-\item 四面体の体積とか表面積を計算したい
+\item $xyz$ 空間の以下の $4$ 点 O, A, B, C を頂点とする四面
+  体 OABC の体積と表面積を求めよう．
+  \[
+    \textrm{O}(0,0,0), \quad \textrm{A}(3,0,-3), \quad \textrm{B}(2,2,4), \quad \textrm{C}(-2,1,1)
+  \]
+
+
+\item $\bm{a}_1=\left[
+    \begin{array}{r}
+      1\\
+      1\\
+      2
+    \end{array}
+  \right], \; \bm{a}_2=\left[
+    \begin{array}{r}
+      1\\
+      0\\
+      1
+    \end{array}
+  \right], \; \bm{a}_3=\left[
+    \begin{array}{r}
+      2\\
+      2\\
+      1
+    \end{array}
+  \right], \; g_{ij} = \bm{a}_i \cdot \bm{a}_j \; (1 \leqq i,j \leqq 3)$ とする．
+
+  \vspace{1zh}
+
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $\bm{b}_1 = \bm{a}_1, \quad \bm{b}_2= \left|
+      \begin{array}{cc}
+        g_{11} & g_{12}\\
+        \bm{a}_1 & \bm{a}_2
+      \end{array}
+    \right|, \quad \bm{b}_3 = \left|
+      \begin{array}{ccc}
+        g_{11} & g_{12} & g_{13}\\
+        g_{21} & g_{22} & g_{23}\\
+        \bm{a}_1 & \bm{a}_2 & \bm{a}_3
+      \end{array}
+    \right|$ を計算しよう．
+
+  \item $3$ 次正方行列 $B=\left[ \bm{b}_i \cdot \bm{b}_j\right]$ を計算しよう．
+  \end{enumerate}
 \end{enumerate}
 
 \end{document}

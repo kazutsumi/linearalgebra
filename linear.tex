@@ -126,15 +126,127 @@
 
 \section{行列の基本変形}\label{sec:transform}
 
+以下の \ref{trans:mul}, \ref{trans:switch}, \ref{trans:add}で定義する行
+列 $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
+
+
 \begin{enumerate}[label=\ref{sec:transform}.\arabic*]
   \setlength{\itemsep}{1zh}
   
-\item
+\item \label{trans:mul}$n$ 次単位行列 $E_n$ の $(i,i)$ 成分を $c$ で置き換えた行列を $M_n(i ; c)$ とする．
 
-\item
+  \vspace{1ex}
 
-\item
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $M_3(1; 3), \; M_3(2; -2)$ を具体的に書いてみよう．
+
+  \item $3$ 次正方行列 $A=\left[ a_{ij}\right]$ に対し，行列の
+    積 $M_3(1;3)A$ と $M_3(2; -2) A$ を計算しよう．
+
+  \item $M_n(i;c)$ を左から掛けることは何を意味するかを考えよ
+    う．
+  \end{enumerate}
+
+\item \label{trans:switch}$n$ 次単位行列 $E_n$ の $(i,i)$ 成分と $(j,j)$ 成分を $0$ に，$(i,j)$ 成分
+  と $(j,i)$ 成分を $1$ に置き換えた行列を $S_n(i,j) \; (i \neq j)$ とする．
+
   
+  \vspace{1ex}
+
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $S_3(1,2), \; S_3(2, 3)$ を具体的に書いてみよう．
+
+  \item $3$ 次正方行列 $A=\left[ a_{ij}\right]$ に対し，行列の
+    積 $S_3(1,2)A$ と $S_3(2,3)A$ を計算しよう．
+
+  \item $S_n(i,j)$ を左から掛けることは何を意味するかを考えよう．
+  \end{enumerate}
+
+\item \label{trans:add}$n$ 次単位行列 $E_n$ の $(i,j)$ 成分を $c$ で置き換えた行列
+  を $A_n(i,j;c) \; (i \neq j)$ とする．
+
+  \vspace{1ex}
+
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $A_3(1,2 ; 3), \; A_3(3, 2; -1)$ を具体的に書いてみよう．
+
+  \item $3$ 次正方行列 $A=\left[ a_{ij}\right]$ に対し，行列の積 $A_3(1,2; 3)A$ と $A_3(3,2; -1)A$ を計算しよう．
+
+  \item $A_n(i,j; c)$ を左から掛けることは何を意味するかを考えよう．
+  \end{enumerate}
+
+\item $A=\left[
+    \begin{array}{rrr}
+      0 & 3 & 6\\
+      1 & 4 & 7\\
+      2 & 5 & 8
+    \end{array}
+  \right]$ とし，$B=\left[ A \  \ E_3\right] = \left[
+    \begin{array}{rrrrrr}
+      0 & 3 & 6 & 1 & 0 & 0\\
+      1 & 4 & 7 & 0 & 1 & 0\\
+      2 & 5 & 8 & 0 & 0 & 1
+    \end{array}
+  \right]$ とする．
+
+  \vspace{1zh}
+
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1ex}
+    
+  \item 行列の積 $S_3(1,2) B$ と $A_3(3,1; -2) S_3(1,2)B$ を計算しよう．
+
+  \item $A$ の簡約化を $C$ とする．$PA=C$ となる $3$ 次正方行列 $P$ を求めよう．
+    
+  \end{enumerate}
+  
+\item $\bm{a}_1=\left[
+    \begin{array}{r}
+      1\\
+      1\\
+      2
+    \end{array}
+  \right], \; \bm{a}_2=\left[
+    \begin{array}{r}
+      1\\
+      0\\
+      1
+    \end{array}
+  \right], \; \bm{a}_3=\left[
+    \begin{array}{r}
+      2\\
+      2\\
+      1
+    \end{array}
+  \right], \quad A=\left[
+    \begin{array}{ccc}
+      \bm{a}_1 & \bm{a}_2 & \bm{a}_3
+    \end{array}
+  \right]$ とする．
+
+  \vspace{1zh}
+
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1ex}
+
+  \item 行列の積 ${}^{t}A A$ を計算しよう．
+    
+  \item 内積 $\bm{a}_i \cdot \bm{a}_j$ を $(i,j)$ 成分とする $3$ 次正方
+    行列 $G=\left[ \bm{a}_i \cdot \bm{a}_j\right]$ を計算しよう．
+
+  \item $L=A_3(3,1,-1) A_3\left(2,1,-\frac{1}{2}\right)$ とす
+    る．行列の積 $LG$ と $L ({}^{t}A)$ を計算しよう．
+
+  \item $B={}^{t}\left( L ({}^{t}A)\right)$ とする．行列の積 ${}^{t} B  B$ を計算しよう．
+    
+    
+  \end{enumerate}
 \end{enumerate}
 
 \newpage

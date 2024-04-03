@@ -535,16 +535,182 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
 \begin{enumerate}[\ref{sec:matrix}.1]
   \setlength{\itemsep}{1ex}
   
+\item \label{power}
+  \begin{enumerate}[(1)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $A^2=\left[
+      \begin{array}{rr}
+        4 & 4\\
+        0 & 4
+      \end{array}
+    \right], A^3=\left[
+      \begin{array}{rr}
+        8 & 12\\
+        0 & 8
+      \end{array}
+    \right], A^4=\left[
+      \begin{array}{rr}
+        16 & 32\\
+        0 & 16
+      \end{array}
+      \right]$ より $A^n=\left[
+        \begin{array}{cc}
+          2^n & n \cdot 2^{n-1}\\
+          0 & 2^n
+        \end{array}
+      \right]$ と予想できる．実際，$n=1$ のときは明らかに正しくて，$n$ のとき正
+      しいと仮定すると，$A^{n+1} =\left[
+        \begin{array}{rr}
+          2 & 1\\
+          0 & 2
+        \end{array}
+      \right] \left[
+        \begin{array}{cc}
+          2^n & n \cdot 2^{n-1}\\
+          0 & 2^n
+        \end{array}
+      \right] = \left[
+        \begin{array}{cc}
+          2^{n+1} & (n+1) \cdot 2^n\\
+          0 & 2^{n+1}
+        \end{array}
+      \right]$ より $n+1$ のときも正しいので，数学的帰納法から予想は正しい．
+
+    \item (1)の結果と行列の分割を用いて計算すると $A^n = \left[
+        \begin{array}{ccr}
+          2^n & n \cdot 2^{n-1} & 0\\
+          0 & 2^n & 0\\
+          0 & 0 & 3^n
+        \end{array}
+      \right]$.
+
+    \item $N=\left[
+        \begin{array}{ccc}
+          0 & 1 & 0\\
+          0 & 0 & 1\\
+          0 & 0 & 0
+        \end{array}
+      \right]$ とすると $A=2E_3+N$ である．$2E_3N =
+      N(2E_3)=2N$ より $2E_3$ と $N$ の積が可換だから二項展開が使える．
+      さらに，$N^3=O$ なので $n \geqq 3$ のとき
+      $A^n = (2E_3+N)^n = {\ds \sum_{i=0}^{n}}~ {}_n C_{i}
+      (2E_3)^{n-i} N^i = 2^{n} E_3 + n \cdot 2^{n-1}N +
+      \frac{n(n-1)}{2} \cdot 2^{n-2} N^2=\left[
+        \begin{array}{ccc}
+          2^n & n \cdot 2^{n-1} & n(n-1)\cdot 2^{n-3}\\
+          0 & 2^n & n \cdot 2^{n-1}\\
+          0 & 0 & 2^n
+        \end{array}
+      \right]$ である．これは $n=1,2$ でも明らかに正しい．
+      
+  \end{enumerate}
+
 \item
   \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
-  \item 
+  \item $A=PBP^{-1} = \left[
+      \begin{array}{rr}
+        3 & 4\\
+        2 & 3
+      \end{array}
+    \right] \left[
+      \begin{array}{rr}
+        2 & 1\\
+        0 & 2
+      \end{array}
+    \right] \left[
+      \begin{array}{rr}
+        3 & -4\\
+        -2 & 3
+      \end{array}
+    \right] = \left[
+      \begin{array}{rr}
+        -4 & 9\\
+        -4 & 8
+      \end{array}
+    \right]$
+    
+  \item
+    $A^n = (PBP^{-1})^n = (PBP^{-1})(PBP^{-1}) \cdots (PBP^{-1}) =
+    PB^n P^{-1}$ より，\ref{sec:matrix}.\ref{power}(1)から $A^n = P \left[
+        \begin{array}{cc}
+          2^n & n\cdot 2^{n-1}\\
+          0 & 2^n
+        \end{array}
+      \right]P^{-1} = 2^{n-1} \left[
+        \begin{array}{cc}
+          2-6n & 9n\\
+          -4n & 2+6n
+        \end{array}
+      \right]$.
   \end{enumerate}
 
 \item
+  \begin{enumerate}[(1)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $A^2+5A-4E_2=O$
+
+  \item 前問より $A^2=4E_2-5A$
+    なので，$A^5 =
+    A(A^2)^2=A(16E_2-40A+25A^2)=A(116E_2-165A)=116A-165A^2=941A-660E_2 = \left[
+      \begin{array}{rr}
+        -2542 & 1882\\
+        4705 & -3483
+      \end{array}
+    \right]$.
+  \end{enumerate}
 
 \item
+  \begin{enumerate}[(1)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $A=\left[
+      \begin{array}{rrrrr}
+        0 & 1 & 0 & 0 & 1\\
+        1 & 0 & 1 & 0 & 0\\
+        0 & 1 & 0 & 1 & 0\\
+        0 & 1 & 1 & 0 & 1\\
+        1 & 0 & 1 & 1 & 0
+      \end{array}
+    \right]$
+
+  \item $A^2=\left[
+      \begin{array}{rrrrr}
+        2 & 0 & 2 & 1 & 0\\
+        0 & 2 & 0 & 1 & 1\\
+        1 & 1 & 2 & 0 & 1\\
+        2 & 1 & 2 & 2 & 0\\
+        0 & 3 & 1 & 1 & 2
+      \end{array}
+    \right], \; A^3=\left[
+      \begin{array}{rrrrr}
+        0 & 5 & 1 & 2 & 3\\
+        3 & 1 & 4 & 1 & 1\\
+        2 & 3 & 2 & 3 & 1\\
+        1 & 6 & 3 & 2 & 4\\
+        5 & 2 & 6 & 3 & 1
+      \end{array}
+    \right], \; A^4=\left[
+      \begin{array}{rrrrr}
+        8 & 3 & 10 & 4 & 2 \\
+        2 & 8 & 3 & 5 & 4 \\
+        4 & 7 & 7 & 3 & 5 \\
+        10 & 6 & 12 & 7 & 3 \\
+        3 & 14 & 6 & 7 & 8 
+      \end{array}
+    \right]$
+
+  \item $i \to \ast \to j$ と，空港 $i$ から $2$ 回の移動（$1$ 回の乗り継ぎ）
+    で空港 $j$ に到着する路線の個数
+
+  \item 空港 $i$ から $n$ 回の移動（$n-1$ 回の乗り継ぎ）で空港 $j$ に到
+    着する路線の個数
+
+  \item $A^4$ の $(4,3)$ 成分なので，(2) より $12$ 個．
+  \end{enumerate}
 \end{enumerate}
 
 \end{document}

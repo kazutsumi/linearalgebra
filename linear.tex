@@ -1,5 +1,5 @@
 \documentclass[11pt, uplatex, dvipdfmx]{jsarticle}
-\usepackage{amsmath,amsfonts, bm, braket, setspace, emathEy, enumitem, graphicx}
+\usepackage{amsmath,amsfonts, bm, braket, setspace, emathEy, enumerate, graphicx}
 
 \newcommand*{\ds}{\displaystyle}
 \renewcommand*{\dlim}{\lim\limits} %emathEyを使わないなら\newcommand
@@ -24,7 +24,7 @@
 
 \section{行列の演算}\label{sec:matrix}
 
-\begin{enumerate}[label=\ref{sec:matrix}.\arabic*]
+\begin{enumerate}[\ref{sec:matrix}.1]
   \setlength{\itemsep}{1zh}
   
 \item 次の行列 $A$ に対し，$A^n$ を求めよう．ただし，$n$ は自然数とする．
@@ -70,7 +70,7 @@
 
   \vspace{1zh}
   
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item $P^{-1}AP=B$ となる行列 $A$ を求めよう．
@@ -87,7 +87,7 @@
 
   \vspace{1zh}
 
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item $A^2+5A-4E_2$ を計算しよう．
@@ -103,7 +103,7 @@
     \includegraphics[width=6cm]{./pictures/routes.pdf}
   \end{figure}
 
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item $a_{ij}$ を $(i,j)$ 成分とする $5$ 次正方行列 $A=\left[ a_{ij}\right]$ を具体的に書いてみよう．
@@ -126,18 +126,20 @@
 
 \section{行列の基本変形}\label{sec:transform}
 
-以下の \ref{trans:mul}, \ref{trans:switch}, \ref{trans:add}で定義する行
-列 $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
+以下の \ref{sec:transform}.\ref{trans:mul},
+\ref{sec:transform}.\ref{trans:switch},
+\ref{sec:transform}.\ref{trans:add}で定義する行列
+$M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
 
 
-\begin{enumerate}[label=\ref{sec:transform}.\arabic*]
+\begin{enumerate}[\ref{sec:transform}.1]
   \setlength{\itemsep}{1zh}
   
 \item \label{trans:mul}$n$ 次単位行列 $E_n$ の $(i,i)$ 成分を $c$ で置き換えた行列を $M_n(i ; c)$ とする．
 
   \vspace{1ex}
 
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item $M_3(1; 3), \; M_3(2; -2)$ を具体的に書いてみよう．
@@ -155,7 +157,7 @@
   
   \vspace{1ex}
 
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item $S_3(1,2), \; S_3(2, 3)$ を具体的に書いてみよう．
@@ -171,7 +173,7 @@
 
   \vspace{1ex}
 
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item $A_3(1,2 ; 3), \; A_3(3, 2; -1)$ を具体的に書いてみよう．
@@ -197,7 +199,7 @@
 
   \vspace{1zh}
 
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item 行列の積 $S_3(1,2) B$ と $A_3(3,1; -2) S_3(1,2)B$ を計算しよう．
@@ -232,7 +234,7 @@
 
   \vspace{1zh}
 
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
 
   \item 行列の積 ${}^{t}A A$ を計算しよう．
@@ -253,7 +255,7 @@
 
 \section{連立1次方程式}\label{sec:system}
 
-\begin{enumerate}[label=\ref{sec:system}.\arabic*]
+\begin{enumerate}[\ref{sec:system}.1]
 
   \setlength{\itemsep}{1zh}
 
@@ -262,7 +264,7 @@
 
   \vspace{1ex}
   
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1zh}
     
   \item $A= \left[
@@ -351,7 +353,7 @@
   \vspace{1zh}
 
   
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item 連立1次方程式 $A\bm{x} = \bm{b}$ を解こう．
@@ -371,12 +373,12 @@
 
 \section{行列式}\label{sec:determinant}
 
-\begin{enumerate}[label=\ref{sec:determinant}.\arabic*]
+\begin{enumerate}[\ref{sec:determinant}.1]
   \setlength{\itemsep}{1zh}
   
 \item 
 
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item O を原点とする $xy$ 平面上に $3$ 点 A$(a,c)$, B$(b,d)$,
@@ -432,7 +434,7 @@
 
   \vspace{1ex}
 
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item 内積 $\bm{a} \cdot (\bm{a} \times \bm{b})$ と $\bm{b}\cdot ( \bm{a} \times \bm{b})$ を計算しよう．
@@ -459,7 +461,7 @@
 
   \vspace{1zh}
   
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item 空間ベクトル $\bm{a}$ と $\bm{b}$ と $\bm{a} \times \bm{b}$ が
@@ -506,7 +508,7 @@
 
   \vspace{1zh}
 
-  \begin{enumerate}[label=(\arabic*)]
+  \begin{enumerate}[(1)]
     \setlength{\itemsep}{1ex}
     
   \item $\bm{b}_1 = \bm{a}_1, \quad \bm{b}_2= \left|
@@ -524,6 +526,25 @@
 
   \item $3$ 次正方行列 $B=\left[ \bm{b}_i \cdot \bm{b}_j\right]$ を計算しよう．
   \end{enumerate}
+\end{enumerate}
+
+\newpage
+
+\section*{解答}
+
+\begin{enumerate}[\ref{sec:matrix}.1]
+  \setlength{\itemsep}{1ex}
+  
+\item
+  \begin{enumerate}[(1)]
+    \setlength{\itemsep}{1ex}
+    
+  \item 
+  \end{enumerate}
+
+\item
+
+\item
 \end{enumerate}
 
 \end{document}

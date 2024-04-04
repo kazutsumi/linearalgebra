@@ -308,22 +308,21 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
     \quad \textrm{D}(-1,-2), \quad \textrm{E}(0,-4)
   \]
 
-\item 4つの物質 A, B, C, D を含む混合溶液 W, X, Y, Z がある．これら4つ
+\item 4つの物質 A, B, Cを含む混合溶液 W, X, Y, Z がある．これら4つ
   の混合溶液を適切な割合で混ぜ合わせて新たな溶液 $\Omega$ を作りたい．
   以下の表は各溶液 W, X, Y, Z とこれから作りたい溶液 $\Omega$ の100gあ
-  たりに含まれる物質 A, B, C, D の含有量（単位はg）を表したものである．
+  たりに含まれる物質 A, B, C の含有量（単位はg）を表したものである．
   各溶液を混ぜ合わせることで化学反応等による質量欠損は起きないものとし
   て，混ぜ合わせる溶液 W, X, Y, Z の適切な割合を求めよう．
-\begin{table}[h]
-  \centering
-  \begin{tabular}{ccccc|c}
-    & W & X & Y & Z & $\Omega$\\ \hline
-    A & 2.00 & 1.00 & 4.00 & 9.00 & 3.00\\ \hline
-    B & 7.00 & 10.0 & 1.00 & 2.00 & 6.00\\ \hline  
-    C & 2.00 & 2.00 & 2.00 & 2.00 & 2.00 \\ \hline
-    D & 4.00 & 8.00 & 10.0 & 7.00 & 7.00\\ 
-  \end{tabular}
-\end{table}
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{ccccc|c}
+      & W & X & Y & Z & $\Omega$\\ \hline
+      A & 2.00 & 1.00 & 4.00 & 9.00 & 3.00\\ \hline
+      B & 7.00 & 10.0 & 1.00 & 2.00 & 6.00\\ \hline  
+      C & 4.00 & 8.00 & 10.0 & 7.00 & 7.00\\ 
+    \end{tabular}
+  \end{table}
 
   
 \item $\bm{a}_1 = \left[
@@ -349,7 +348,7 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
       \bm{a}_1 & \bm{a}_2
     \end{array}
   \right]$ とする．
-      
+  
   \vspace{1zh}
 
   
@@ -366,7 +365,7 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
   \item 空間ベクトル $A\bm{x}-\bm{b}$ の大きさの $2$ 乗 $|A\bm{x} - \bm{b}|^2$ が最小とな
     る $\bm{x}$ を求めよう．
   \end{enumerate}
-    
+  
 \end{enumerate}
 
 \newpage
@@ -476,7 +475,7 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
         \bm{a} & \bm{b} & \bm{c}
       \end{array}
     \right]$ の行列式を計算しよう．
-      
+    
   \end{enumerate}
   
 \item $xyz$ 空間の以下の $4$ 点 O, A, B, C を頂点とする四面
@@ -554,56 +553,56 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
         16 & 32\\
         0 & 16
       \end{array}
-      \right]$ より $A^n=\left[
-        \begin{array}{cc}
-          2^n & n \cdot 2^{n-1}\\
-          0 & 2^n
-        \end{array}
-      \right]$ と予想できる．実際，$n=1$ のときは明らかに正しくて，$n$ のとき正
-      しいと仮定すると，$A^{n+1} =\left[
-        \begin{array}{rr}
-          2 & 1\\
-          0 & 2
-        \end{array}
-      \right] \left[
-        \begin{array}{cc}
-          2^n & n \cdot 2^{n-1}\\
-          0 & 2^n
-        \end{array}
-      \right] = \left[
-        \begin{array}{cc}
-          2^{n+1} & (n+1) \cdot 2^n\\
-          0 & 2^{n+1}
-        \end{array}
-      \right]$ より $n+1$ のときも正しいので，数学的帰納法から予想は正しい．
+    \right]$ より $A^n=\left[
+      \begin{array}{cc}
+        2^n & n \cdot 2^{n-1}\\
+        0 & 2^n
+      \end{array}
+    \right]$ と予想できる．実際，$n=1$ のときは明らかに正しくて，$n$ のとき正
+    しいと仮定すると，$A^{n+1} =\left[
+      \begin{array}{rr}
+        2 & 1\\
+        0 & 2
+      \end{array}
+    \right] \left[
+      \begin{array}{cc}
+        2^n & n \cdot 2^{n-1}\\
+        0 & 2^n
+      \end{array}
+    \right] = \left[
+      \begin{array}{cc}
+        2^{n+1} & (n+1) \cdot 2^n\\
+        0 & 2^{n+1}
+      \end{array}
+    \right]$ より $n+1$ のときも正しいので，数学的帰納法から予想は正しい．
 
-    \item (1)の結果と行列の分割を用いて計算すると $A^n = \left[
-        \begin{array}{ccr}
-          2^n & n \cdot 2^{n-1} & 0\\
-          0 & 2^n & 0\\
-          0 & 0 & 3^n
-        \end{array}
-      \right]$.
+  \item (1)の結果と行列の分割を用いて計算すると $A^n = \left[
+      \begin{array}{ccr}
+        2^n & n \cdot 2^{n-1} & 0\\
+        0 & 2^n & 0\\
+        0 & 0 & 3^n
+      \end{array}
+    \right]$.
 
-    \item $N=\left[
-        \begin{array}{ccc}
-          0 & 1 & 0\\
-          0 & 0 & 1\\
-          0 & 0 & 0
-        \end{array}
-      \right]$ とすると $A=2E_3+N$ である．$2E_3N =
-      N(2E_3)=2N$ より $2E_3$ と $N$ の積が可換だから二項展開が使える．
-      さらに，$N^3=O$ なので $n \geqq 3$ のとき
-      $A^n = (2E_3+N)^n = {\ds \sum_{i=0}^{n}}~ {}_n C_{i}
-      (2E_3)^{n-i} N^i = 2^{n} E_3 + n \cdot 2^{n-1}N +
-      \frac{n(n-1)}{2} \cdot 2^{n-2} N^2=\left[
-        \begin{array}{ccc}
-          2^n & n \cdot 2^{n-1} & n(n-1)\cdot 2^{n-3}\\
-          0 & 2^n & n \cdot 2^{n-1}\\
-          0 & 0 & 2^n
-        \end{array}
-      \right]$ である．これは $n=1,2$ でも明らかに正しい．
-      
+  \item $N=\left[
+      \begin{array}{ccc}
+        0 & 1 & 0\\
+        0 & 0 & 1\\
+        0 & 0 & 0
+      \end{array}
+    \right]$ とすると $A=2E_3+N$ である．$2E_3N =
+    N(2E_3)=2N$ より $2E_3$ と $N$ の積が可換だから二項展開が使える．
+    さらに，$N^3=O$ なので $n \geqq 3$ のとき
+    $A^n = (2E_3+N)^n = {\ds \sum_{i=0}^{n}}~ {}_n C_{i}
+    (2E_3)^{n-i} N^i = 2^{n} E_3 + n \cdot 2^{n-1}N +
+    \frac{n(n-1)}{2} \cdot 2^{n-2} N^2=\left[
+      \begin{array}{ccc}
+        2^n & n \cdot 2^{n-1} & n(n-1)\cdot 2^{n-3}\\
+        0 & 2^n & n \cdot 2^{n-1}\\
+        0 & 0 & 2^n
+      \end{array}
+    \right]$ である．これは $n=1,2$ でも明らかに正しい．
+    
   \end{enumerate}
 
 \item
@@ -635,16 +634,16 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
   \item
     $A^n = (PBP^{-1})^n = (PBP^{-1})(PBP^{-1}) \cdots (PBP^{-1}) =
     PB^n P^{-1}$ より，\ref{sec:matrix}.\ref{power}(1)から $A^n = P \left[
-        \begin{array}{cc}
-          2^n & n\cdot 2^{n-1}\\
-          0 & 2^n
-        \end{array}
-      \right]P^{-1} = 2^{n-1} \left[
-        \begin{array}{cc}
-          2-6n & 9n\\
-          -4n & 2+6n
-        \end{array}
-      \right]$.
+      \begin{array}{cc}
+        2^n & n\cdot 2^{n-1}\\
+        0 & 2^n
+      \end{array}
+    \right]P^{-1} = 2^{n-1} \left[
+      \begin{array}{cc}
+        2-6n & 9n\\
+        -4n & 2+6n
+      \end{array}
+    \right]$.
   \end{enumerate}
 
 \item
@@ -769,7 +768,7 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
         0 & 0 & 1\\
         0 & 1 & 0
       \end{array}
-      \right]$
+    \right]$
 
   \item $S_3(1,2)A=\left[
       \begin{array}{rrr}
@@ -783,7 +782,7 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
         a_{31} & a_{32} & a_{33}\\
         a_{21} & a_{22} & a_{23}
       \end{array}
-      \right]$
+    \right]$
 
   \item 右の行列に行基本変形「第 $i$ 行と第 $j$ 行を入れ替える」を適用することを意味する．
   \end{enumerate}
@@ -830,47 +829,47 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
     \setlength{\itemsep}{1ex}
     
   \item   $S_3(1,2)B=\left[
-    \begin{array}{rrrrrr}
-      1 & 4 & 7 & 0 & 1 & 0\\
-      0 & 6 & 1 & 0 & 1 & 0\\
-      2 & 5 & 8 & 0 & 0 & 1
-    \end{array}
-  \right]$ \vspace{1ex}
+      \begin{array}{rrrrrr}
+        1 & 4 & 7 & 0 & 1 & 0\\
+        0 & 6 & 1 & 0 & 1 & 0\\
+        2 & 5 & 8 & 0 & 0 & 1
+      \end{array}
+    \right]$ \vspace{1ex}
 
-  $A_3(3,1;-2) S_3(1,2)B = \left[
-    \begin{array}{rrrrrr}
-      1 & 4 & 7 & 0 & 1 & 0\\
-      0 & 3 & 6 & 1 & 0 & 0\\
-      0 & -3 & -6 & 0 & -2 & 1
-    \end{array}
-  \right]$
-
-
-\item $PB = \left[PA \; PE_3\right] = \left[ C \ P\right]$ は簡約行列な
-  ので，$B$ を簡約化すればよい．(1)を続けて
-  \[
-    \renewcommand{\arraystretch}{1.1}
-    B \to \left[
+    $A_3(3,1;-2) S_3(1,2)B = \left[
       \begin{array}{rrrrrr}
         1 & 4 & 7 & 0 & 1 & 0\\
         0 & 3 & 6 & 1 & 0 & 0\\
         0 & -3 & -6 & 0 & -2 & 1
       \end{array}
-    \right] \to \cdots \to \left[
-      \begin{array}{rrrrrr}
-        1 & 0 & -1 & 0 & -\frac{5}{3} & \frac{4}{3}\\
-        0 & 1 & 2 & 0 & \frac{2}{3} & -\frac{1}{3}\\
-        0 & 0 & 0 & 1 & -2 & 1
+    \right]$
+
+
+  \item $PB = \left[PA \; PE_3\right] = \left[ C \ P\right]$ は簡約行列な
+    ので，$B$ を簡約化すればよい．(1)を続けて
+    \[
+      \renewcommand{\arraystretch}{1.1}
+      B \to \left[
+        \begin{array}{rrrrrr}
+          1 & 4 & 7 & 0 & 1 & 0\\
+          0 & 3 & 6 & 1 & 0 & 0\\
+          0 & -3 & -6 & 0 & -2 & 1
+        \end{array}
+      \right] \to \cdots \to \left[
+        \begin{array}{rrrrrr}
+          1 & 0 & -1 & 0 & -\frac{5}{3} & \frac{4}{3}\\
+          0 & 1 & 2 & 0 & \frac{2}{3} & -\frac{1}{3}\\
+          0 & 0 & 0 & 1 & -2 & 1
+        \end{array}
+      \right]
+      \renewcommand{\arraystretch}{1}
+    \]
+    より $P=\left[
+      \begin{array}{rrr}
+        0 & -\frac{5}{3} & \frac{4}{3}\\
+        0 & \frac{2}{3} & -\frac{1}{3}\\
+        1 & -2 & 1
       \end{array}
-    \right]
-    \renewcommand{\arraystretch}{1}
-  \]
-  より $P=\left[
-    \begin{array}{rrr}
-      0 & -\frac{5}{3} & \frac{4}{3}\\
-      0 & \frac{2}{3} & -\frac{1}{3}\\
-      1 & -2 & 1
-    \end{array}
     \right]$.
   \end{enumerate}
 
@@ -924,57 +923,373 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
         0 & \frac{1}{2} & 0\\
         0 & 0 & 3
       \end{array}
-      \right], \quad L({}^{t}A) = \left[
-        \begin{array}{rrr}
-          1 & 1 & 2\\
-          \frac{1}{2} & -\frac{1}{2} & 0\\
-          1 & 1 & -1
-        \end{array}
-      \right]$.
+    \right], \quad L({}^{t}A) = \left[
+      \begin{array}{rrr}
+        1 & 1 & 2\\
+        \frac{1}{2} & -\frac{1}{2} & 0\\
+        1 & 1 & -1
+      \end{array}
+    \right]$.
 
-    \item ${}^{t} B B = \left[
-        \begin{array}{rrr}
-          1 & 1 & 2\\
-          \frac{1}{2} & -\frac{1}{2} & 0\\
-          1 & 1 & -1
-        \end{array}
-      \right] \left[
-        \begin{array}{rrr}
-          1 & \frac{1}{2} & 1\\
-          1 & -\frac{1}{2} & 1\\
-          2 & 0 & -1
-        \end{array}
-      \right] = \left[
-        \begin{array}{rrr}
-          6 & 0 & 0\\
-          0 & \frac{1}{2} & 0\\
-          0 & 0 & 3
-        \end{array}
-      \right]$.
+  \item ${}^{t} B B = \left[
+      \begin{array}{rrr}
+        1 & 1 & 2\\
+        \frac{1}{2} & -\frac{1}{2} & 0\\
+        1 & 1 & -1
+      \end{array}
+    \right] \left[
+      \begin{array}{rrr}
+        1 & \frac{1}{2} & 1\\
+        1 & -\frac{1}{2} & 1\\
+        2 & 0 & -1
+      \end{array}
+    \right] = \left[
+      \begin{array}{rrr}
+        6 & 0 & 0\\
+        0 & \frac{1}{2} & 0\\
+        0 & 0 & 3
+      \end{array}
+    \right]$.
 
-      \vspace{1zh}
-      
-      補足：$B=\left[ \bm{b}_1 \ \bm{b}_2 \ \bm{b}_3 \right]$ とおけ
-      ば，$\left[ \bm{b}_i \cdot \bm{b}_j\right] = {}^{t}BB$ なの
-      で，(4) の結果は
-      $\bm{b}_1 \cdot \bm{b}_2 = \bm{b}_1 \cdot \bm{b}_3 = \bm{b}_2
-      \cdot \bm{b}_3=0$ を意味する．つまり，$\bm{b}_1, \bm{b}_2,
-      \bm{b}_3$
-      は互いに直交する．さらに，$B=A ({}^{t}L) = \left[
-        \bm{a}_1 \ \bm{a}_2 \ \bm{a}_3 \right] {}^{t}L = \left[
-        \begin{array}{ccc}
-          \bm{a}_1 & -\frac{1}{2}\bm{a}_1 + \bm{a}_2 & -\bm{a}_1 + \bm{a}_3
+    \vspace{1zh}
+    
+    補足：$B=\left[ \bm{b}_1 \ \bm{b}_2 \ \bm{b}_3 \right]$ とおけ
+    ば，$\left[ \bm{b}_i \cdot \bm{b}_j\right] = {}^{t}BB$ なの
+    で，(4) の結果は
+    $\bm{b}_1 \cdot \bm{b}_2 = \bm{b}_1 \cdot \bm{b}_3 = \bm{b}_2
+    \cdot \bm{b}_3=0$ を意味する．つまり，$\bm{b}_1, \bm{b}_2,
+    \bm{b}_3$
+    は互いに直交する．$3 \times 6$ 行列 $\left[
+      \begin{array}{cc}
+        G & {}^{t}A
+      \end{array}
+    \right]$ に左 $3$ 列が上三角行列になるまで「ある行に別の行の定数
+    倍を加える」という行基本変形を適宜繰り返したのが $L\left[
+      \begin{array}{cc}
+        G & {}^{t}A
+      \end{array}
+    \right] =\left[
+      \begin{array}{cc}
+        LG & L({}^{t}A)
+      \end{array}
+    \right] = \left[
+      \begin{array}{cc}
+        LG & {}^{t}B
+      \end{array}
+    \right]$ である．これは与えれたベクトルたちから互いに直交するベク
+    トルたちを行列の行基本変形によって作り出している．
+  \end{enumerate}
+  
+\end{enumerate}
+
+
+\begin{enumerate}[\ref{sec:system}.1]
+  \setlength{\itemsep}{1zh}
+  
+\item
+  \begin{enumerate}[(1)]
+    \setlength{\itemsep}{1ex}
+
+  \item $X=\left[
+      \begin{array}{cc}
+        \bm{x}_1 & \bm{x}_2
+      \end{array}
+    \right]$ とおくと，
+    \[
+      AX = B \quad \Longleftrightarrow \quad \left[
+        \begin{array}{cc}
+          1 & 2\\
+          3 & 5
         \end{array}
-      \right]$
-      なので，$\bm{b}_1 = \bm{a}_1, \, \bm{b}_2=
-      -\frac{1}{2}\bm{a}_1+\bm{a}_2, \, \bm{b}_3=-\bm{a}_1+\bm{a}_3$ で
-      ある．この問題は，与えられたベクトルたちから互いに直交するベクト
-      ルたちを行基本変形によって作り出す方法を与えている．
-      
+      \right] \bm{x}_1 = \left[
+        \begin{array}{r}
+          9\\
+          21
+        \end{array}
+      \right] \text{ かつ } \left[
+        \begin{array}{cc}
+          1 & 2\\
+          3 & 4
+        \end{array}
+      \right] \bm{x}_2 = \left[
+        \begin{array}{r}
+          5\\
+          9
+        \end{array}
+      \right]
+    \]
+    なので，$2$ 個の連立1次方程式を同時に解くために，$\left[
+      \begin{array}{cc}
+        A & B
+      \end{array}
+    \right]$ を簡約化すればよい．$\left[
+      \begin{array}{cc}
+        A & B
+      \end{array}
+    \right] = \left[
+      \begin{array}{rrrr}
+        1 & 2 & 9 & 5\\
+        3 & 4 & 21 & 9
+      \end{array}
+    \right] \to \left[
+      \begin{array}{rrrr}
+        1 & 0 & 3 & -1\\
+        0 & 1 & 3 & 3
+      \end{array}
+    \right]$ より $X=\left[
+      \begin{array}{rr}
+        3 & -1\\
+        3 & 3
+      \end{array}
+    \right]$.
+
+  \item $X=\left[
+      \begin{array}{ccc}
+        \bm{x}_1 & \bm{x}_2 & \bm{x}_3
+      \end{array}
+    \right], B=\left[
+      \begin{array}{ccc}
+        \bm{b}_1 & \bm{b}_2 & \bm{b}_3
+      \end{array}
+    \right]$ とおくと，
+    \[
+      AX=B \quad \Longleftrightarrow \quad A\bm{x}_1 = \bm{b}_1
+      \text{ かつ } A\bm{x}_2 = \bm{b}_2 \text{ かつ }
+      A\bm{x}_3=\bm{b}_3
+    \]
+    なので，$3$ 個の連立1次方程式を同時解くために $\left[
+      \begin{array}{cc}
+        A & B
+      \end{array}
+    \right]$ を簡約化すればよい．
+    $\left[
+      \begin{array}{cc}
+        A & B
+      \end{array}
+    \right] = \left[
+      \begin{array}{rrrrrr}
+        1 & 2 & 3 & -3 & 6 & 4\\
+        4 & 5 & 6 & 3 & 9 & 16\\
+        7 & 8 & 9 & 9 & 12 & 28
+      \end{array}
+    \right] \to  \left[
+      \begin{array}{rrrrrr}
+        1 & 0 & -1 & 7 & -4 & 4\\
+        0 & 1 & 2 & -5 & 5 & 0\\
+        0 & 0 & 0 & 0 & 0 & 0
+      \end{array}
+    \right]$ なので
+    \[
+      \begin{aligned}
+        A\bm{x}_1 = \bm{b}_1 & \Leftrightarrow \left[
+                               \begin{array}{rrr}
+                                 1 & 0 & -1\\
+                                 0 & 1 & 2
+                               \end{array}
+                               \right] \bm{x}_1 = \left[
+                               \begin{array}{r}
+                                 7\\
+                                 -5
+                               \end{array}
+                               \right] \Leftrightarrow \bm{x}_1 = \left[
+                               \begin{array}{r}
+                                 7\\
+                                 -5\\
+                                 0
+                               \end{array}
+                               \right] + c_1 \left[
+                               \begin{array}{r}
+                                 1\\
+                                 -2\\
+                                 1
+                               \end{array}
+                               \right]\\
+        A\bm{x}_2 = \bm{b}_2 & \Leftrightarrow \left[
+                               \begin{array}{rrr}
+                                 1 & 0 & -1\\
+                                 0 & 1 & 2
+                               \end{array}
+                               \right] \bm{x}_2 = \left[
+                               \begin{array}{r}
+                                 -4\\
+                                 5
+                               \end{array}
+                               \right] \Leftrightarrow \bm{x}_2 = \left[
+                               \begin{array}{r}
+                                 -4\\
+                                 5\\
+                                 0
+                               \end{array}
+                               \right] + c_2 \left[
+                               \begin{array}{r}
+                                 1\\
+                                 -2\\
+                                 1
+                               \end{array}
+                               \right]\\
+        A\bm{x}_3=\bm{b}_3 & \Leftrightarrow \left[
+                             \begin{array}{rrr}
+                               1 & 0 & -1\\
+                               0 & 1 & 2
+                             \end{array}
+                             \right] \bm{x}_3 = \left[
+                             \begin{array}{r}
+                               4\\
+                               0
+                             \end{array}
+                             \right] \Leftrightarrow \bm{x}_3=\left[
+                             \begin{array}{r}
+                               4\\
+                               0\\
+                               0
+                             \end{array}
+                             \right] + c_3\left[
+                             \begin{array}{r}
+                               1\\
+                               -2\\
+                               1
+                             \end{array}
+                             \right]
+      \end{aligned}
+    \]
+    より $X=\left[
+      \begin{array}{rrr}
+        7 & -4 & 4\\
+        -5 & 5 & 0\\
+        0 & 0 & 0
+      \end{array}
+    \right] + c_1 \left[
+      \begin{array}{rrr}
+        1 & 0 & 0\\
+        -2 & 0 & 0\\
+        1 & 0 & 0
+      \end{array}
+    \right] + c_2 \left[
+      \begin{array}{rrr}
+        0 & 1 & 0\\
+        0 & -2 & 0\\
+        0 & 1 & 0
+      \end{array}
+    \right] + c_3\left[
+      \begin{array}{rrr}
+        0 & 0 & 1\\
+        0 & 0 & -2\\
+        0 & 0 & 1
+      \end{array}
+    \right]$.
   \end{enumerate}
 
   
+  
+\item $\begin{cases}
+  f(1) = a_0 + a_1 + a_2 + 3a_3=1\\
+  f(2) = a_0 + 2a_1 + 4a_2 + 9a_3=2\\
+  f'(1) = a_1+2a_2+3a_3=2\\
+  f'(2) = a_1+4a_2+12a_3=3
+\end{cases}$ を解いて $f(x) = -8 + 19x -13x^2+3x^3$.
+
+\item $f(x,y) = ax^2+bxy+cy^2+dx+ey+f$ とおく．同次形連立1次方程式
+  \[
+    \begin{cases}
+      f(3,-1) = 9a-3b+c+3d-e+f=0\\
+      f(2,2)=4a+4b+4c+ed+ee+f=0\\
+      f(-4,-1)=16a+4b+c-4d-e+f=0\\
+      f(-1,-2)=a+2b+4c-d-2e+f=0\\
+      f(0,-4)=16c-4e+f=0
+    \end{cases}
+  \]
+  を解いて $(a,b,c,d,e,f) = ( k, 6k, -k, 7k, -9k, -20k)$ を得る．明らか
+  に $k\neq 0$ なので，求める $2$ 次曲線の方程式は $x^2+6xy-y^2+7x-9y-20=0$.
+  
+\item W, X, Y, Z をそれぞれ $w, x, y, z$ ずつ混ぜる．$\Omega$ に含まれ
+  る A, B, C の割合からそれぞれ
+  \[
+    \begin{aligned}
+      &\frac{ \frac{2}{100}w + \frac{1}{100}x + \frac{4}{100}y +
+      \frac{9}{100}z}{w+x+y+z} = \frac{3}{100}, \quad 
+      \frac{\frac{7}{100}w+\frac{10}{100}x+\frac{1}{100}y
+      + \frac{2}{100}z}{w+x+y+z}=\frac{6}{100},\\
+      &\frac{\frac{4}{100}w+\frac{8}{100}x+\frac{10}{100}y+\frac{7}{100}z}{w+x+y+z}
+      =\frac{7}{100}
+    \end{aligned}
+  \]
+  が成り立つ．これらを整理して得られる同次形連立1次方程式 $\begin{cases}
+      w+2x-y-6z=0\\
+      w+4x-5y-4z=0\\
+      3w-x-3y=0
+  \end{cases}$ を解いて $(w,x,y,z) = (37c, 36c, 25c,  14c)$ を得る．
+  明らかに $c \neq 0$ なので，W, X, Y,
+  Z を $37c:36c:25c:14c = 37:36:25:14$ の割合で混ぜればよい．
+
+
+\item
+  \begin{enumerate}[(1)]
+    \setlength{\itemsep}{1ex}
+    
+  \item 解はない．
+
+  \item ${}^{t} A A \bm{x} = {}^{t}A\bm{b} \Leftrightarrow \left[
+      \begin{array}{rr}
+        9 & 12\\
+        12 & 26
+      \end{array}
+    \right] \bm{x} = \left[
+      \begin{array}{r}
+        9\\
+        -9
+      \end{array}
+    \right]$ より解は $\bm{x} = \left[
+      \begin{array}{r}
+        \frac{19}{5}\\
+        -\frac{21}{10}
+      \end{array}
+    \right]$.
+      
+    
+  \item $(A\bm{x}) \cdot (A\bm{x}-\bm{b}) = \left[
+      \begin{array}{r}
+        \frac{11}{2}\\
+        \frac{13}{10}\\
+        \frac{23}{5}
+      \end{array}
+    \right] \cdot \left[
+      \begin{array}{r}
+        \frac{1}{2}\\
+        -\frac{7}{10}\\
+        -\frac{2}{5}
+      \end{array}
+    \right]=0$
+    
+  \item $\bm{x}=\left[
+      \begin{array}{c}
+        x_1\\
+        x_2
+      \end{array}
+    \right]$ とおくと，$A\bm{x} = \left[
+      \begin{array}{cc}
+        \bm{a}_1 & \bm{a}_2
+      \end{array}
+    \right] \left[
+      \begin{array}{c}
+        x_1\\
+        x_2
+      \end{array}
+    \right] = x_1 \bm{a}_1 + x_2 \bm{a}_2$ なので，$A\bm{x}$ を位置ベク
+    トルとする点を H とすれば，H は $\bm{a}_1$ と $\bm{a}_2$ が張る平面
+    上にある．$\bm{b}$ を位置ベクトルとする点を B とすれば，$A\bm{x} -
+    \bm{b} = \vec{BH}$ なので $\vec{OH}$ と $\vec{BH}$ が直交するとき，
+    すなわち，$A\bm{x} \cdot (A\bm{x}-\bm{b})=0$ のと
+    き $|\vec{OH}|=|A\bm{x}-\bm{b}|$ は最小となる．よって，(2), (3) よ
+    り $\bm{x}=\left[
+      \begin{array}{r}
+        \frac{19}{5}\\
+        -\frac{21}{10}
+      \end{array}
+    \right]$ のとき $|A\bm{x}-\bm{b}|^2$ は最小となる．
+  \end{enumerate}
+
 \end{enumerate}
+
 
 
 

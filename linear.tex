@@ -532,7 +532,7 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
 \section*{解答}
 
 \begin{enumerate}[\ref{sec:matrix}.1]
-  \setlength{\itemsep}{1ex}
+  \setlength{\itemsep}{1zh}
   
 \item \label{power}
   \begin{enumerate}[(1)]
@@ -715,7 +715,7 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
 \vspace{1zh}
 
 \begin{enumerate}[\ref{sec:transform}.1]
-  \setlength{\itemsep}{1ex}
+  \setlength{\itemsep}{1zh}
   
 \item
   \begin{enumerate}[(1)]
@@ -1296,6 +1296,298 @@ $M_n(i;c), S_n(i,j), A_n(i,j;c)$ を（行の）基本行列という．
     として採用される．
   \end{enumerate}
 
+\end{enumerate}
+
+\begin{enumerate}[\ref{sec:determinant}.1]
+  \setlength{\itemsep}{1zh}
+  
+\item \label{area}
+  \begin{enumerate}[(1)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $\bm{a} = \vec{OA}, \, \bm{b} = \vec{OB}$ のなす角を $\theta$ とする．平行四辺
+    形 OACB の面積を $S$ とすれば，
+    \[
+      \begin{aligned}
+        S^2 &= \left( |\bm{a}| \bm{b}| \sin \theta\right)^2
+              = |\bm{a}|^2 |\bm{b}|^2 ( 1-\cos^2\theta)
+              =|\bm{a}|^2|\bm{b}|^2 - \left(|\bm{a}||\bm{b}|\cos\theta\right)^2
+              =|\bm{a}|^2|\bm{b}|^2 - \left(\bm{a} \cdot \bm{b}\right)^2\\
+        &= (a^2+c^2)(b^2+d^2) - (ab+cd)^2 = (ad-bc)^2
+      \end{aligned}
+    \]
+    より，平行四辺形 OACB の面積は $|ad-bc|$ で，三角形 OAB の面積
+    は $\frac{S}{2}= \frac{|ad-bc|}{2}$.
+    
+  \item $\det \left[
+      \begin{array}{cc}
+        a & b\\
+        c & d
+      \end{array}
+      \right] = ad-bc$
+
+    \item $3$ つの三角形 PQR, PRS, PST の面積を合わせればよ
+      い．(1), (2) から，三角形 PQR の面積は，$\frac{1}{2}\left| \det\left[
+          \begin{array}{cc}
+            \vec{PQ} & \vec{PR}
+          \end{array}
+        \right]\right| = \frac{1}{2} \left|\det\left[
+          \begin{array}{rr}
+            -6 & -9\\
+             2 &  -3  
+          \end{array}
+        \right]\right|=18$ である．同様に，三角形 PRS の面積
+      は $\frac{1}{2}\left| \det\left[
+          \begin{array}{cc}
+            \vec{PR} & \vec{PS}
+          \end{array}
+          \right] \right| = \frac{1}{2}\left| \det\left[
+            \begin{array}{rr}
+              -9 & -7\\
+              -3 & -7
+            \end{array}
+          \right] \right| = 21$ で，三角形 PST の面積
+        は $\frac{1}{2}\left| \det\left[
+              \begin{array}{cc}
+                \vec{PS} & \vec{PT}
+              \end{array}
+            \right]\right| = \frac{1}{2}\left| \det\left[
+              \begin{array}{rr}
+                -7 & 1\\
+                -7 & -7
+              \end{array}
+            \right]\right| = 28$ である．よって，五角形 PQRST の面積
+          は $18+21+28=67$.
+      
+  \end{enumerate}
+
+\item \label{crossproduct}
+  \begin{enumerate}[(1)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $\bm{a} \cdot (\bm{a} \times \bm{b}) = a_1 \left|
+      \begin{array}{rr}
+        a_2 & b_2\\
+        a_3 & b_3
+      \end{array}
+    \right| - a_2\left|
+      \begin{array}{rr}
+        a_1 & b_1\\
+        a_3 & b_3
+      \end{array}
+    \right| + a_3\left|
+      \begin{array}{rr}
+        a_1 & b_1\\
+        a_2 & b_2
+      \end{array}
+    \right| = \left|
+      \begin{array}{rrr}
+        a_1 & b_1 & a_1\\
+        a_2 & b_2 & a_2\\
+        a_3 & b_3 & a_3
+      \end{array}
+    \right| =0$
+
+    $\bm{b} \cdot (\bm{a} \times \bm{b}) = b_1 \left|
+      \begin{array}{rr}
+        a_2 & b_2\\
+        a_3 & b_3
+      \end{array}
+    \right| - b_2\left|
+      \begin{array}{rr}
+        a_1 & b_1\\
+        a_3 & b_3
+      \end{array}
+    \right| + b_3\left|
+      \begin{array}{rr}
+        a_1 & b_1\\
+        a_2 & b_2
+      \end{array}
+    \right| = \left|
+      \begin{array}{rrr}
+        a_1 & b_1 & b_1\\
+        a_2 & b_2 & b_2\\
+        a_3 & b_3 & b_3
+      \end{array}
+    \right| =0$
+
+    
+  \item  $\bm{a} \times \bm{b} = {}^{t} \left[
+      \begin{array}{ccc}
+        a_2 b_3 - a_3 b_2 & -(a_1b_3-a_3b_a) & a_1b_2-a_2b_1
+      \end{array}
+      \right]$ なので
+    \[
+      \begin{aligned}
+        |\bm{a} \times \bm{b}| &= \sqrt{(a_2b_3-a_3b_2)^2 + (a_1b_3-a_3b_1)^2 + (a_1b_2-a_2b_1)^2}\\
+        &= \sqrt{(a_1^2+a_2^2+a_3^2)(b_1^2+b_2^2+b_3^2) - (a_1b_1+a_2b_2+a_3b_3)^2}.
+      \end{aligned}
+    \]
+
+  \item \ref{sec:determinant}.\ref{area}(1) と同様
+    に，$\bm{a}$ と $\bm{b}$ が張る平行四辺形の面積は
+    \[
+      \sqrt{ |\bm{a}|^2|\bm{b}|^2 - (\bm{a} \cdot \bm{b})^2} =
+      \sqrt{(a_1^2+a_2^2+a_3^2) (b_1^2+b_2^2+b_3^2) - (a_1b_1 + a_2b_2
+        + a_3b_3)^2}.
+    \]
+    よって，(2), (3)から $|\bm{a} \times \bm{b}|$ は $\bm{a}$ と $\bm{b}$ が張る平行
+    四辺形の面積に等しい．
+  \end{enumerate}
+
+\item \label{volume}
+  \begin{enumerate}[(1)]
+    \setlength{\itemsep}{1ex}
+    
+  \item \ref{sec:determinant}.\ref{crossproduct}(1) から
+    $\bm{a} \times \bm{b}$ は $\bm{a}, \bm{b}$ の両方に直交するので，こ
+    れらが張る平行六面体は $\bm{a}$ と $\bm{b}$ が張る平行四辺形を底面
+    とする高さ $|\bm{a}\times \bm{b}|$ の立体である．よっ
+    て，\ref{sec:determinant}.\ref{crossproduct}(2),(3) からその体積
+    は
+    $|\bm{a} \times \bm{b}|^2
+    =(a_1^2+a_2^2+a_4)(b_1^2+b_2^2+b_3^2)-(a_1b_1 + a_2b_2 +
+    a_3b_3)^2$.
+
+  \item $\bm{a} \times \bm{b}$ と $\bm{c}$ のなす角を $\theta$ とする
+    と，$\bm{a}, \bm{b}, \bm{c}$ が張る平行六面体
+    は，$\bm{a}$ と $\bm{b}$ が張る平行四辺形を底面とする高
+    さ $|\bm{c}| |\cos \theta|$ の立体なので，その体積は
+    $|\bm{a} \times \bm{b}| |\bm{c}| |\cos \theta| = \left| (\bm{a}
+      \times \bm{b}) \cdot \bm{c}\right|$ である．絶対値の中身は次の問で計算する．
+
+  \item $(\bm{a} \times \bm{b}) \cdot \bm{c} = c_1 \left|
+      \begin{array}{cc}
+        a_2 & b_2\\
+        a_3 & b_3
+      \end{array}
+    \right| - c_2 \left|
+      \begin{array}{cc}
+        a_1 & b_1\\
+        a_3 & b_3
+      \end{array}
+      \right| + c_3 \left|
+        \begin{array}{cc}
+          a_1 & b_1\\
+          a_2 & b_@
+        \end{array}
+      \right| = \left|
+        \begin{array}{ccc}
+          a_1 & b_1 & c_1\\
+          a_2 & b_2 & c_2\\
+          a_3 & b_3 & c_3
+        \end{array}
+        \right|$ である．これの具体的な値は次の問で計算する．
+
+  \item $\det A = a_1 b_2 c_3 + a_3b_1c_2 + a_2 b_3 c_1 - a_1b_3c_2 - a_2 b_1 c_3 - a_3 b_2 c_1$
+    
+  \end{enumerate}
+
+\item 四面体 OABC の体積は，$\vec{OA}, \vec{OB}, \vec{OC}$ が張る平行六
+  面体の体積の $\frac{1}{6}$ 倍なので，\ref{sec:determinant}.\ref{volume} から
+  \[
+    \frac{1}{6} \left| \det\left[
+        \begin{array}{ccc}
+          \vec{OA} & \vec{OB} & \vec{OC}
+        \end{array}
+      \right] \right| = \frac{1}{6} \left| \det\left[
+        \begin{array}{rrr}
+          3 & 2 & -2\\
+          0 & 2 & 1\\
+          -3 & 4 & 1
+        \end{array}
+      \right]\right| =4. 
+  \]
+  四面体 OABC の表面積は $4$ 個の三角形 OAB, OAC, OBC, ABC の面積を合わ
+  せればよい．三角形 OAB の面積は，$\vec{OA}$ と $\vec{OB}$ が張る平行
+  四辺形の面積の $\frac{1}{2}$ 倍なので，\ref{sec:determinant}.\ref{crossproduct} から
+  \[
+    \frac{1}{2}\left| \vec{OA} \times \vec{OB}\right| = \frac{1}{2}\left| \left[
+        \begin{array}{r}
+          3\\
+          0\\
+          -3
+        \end{array}
+      \right] \times \left[
+        \begin{array}{r}
+          2\\
+          2\\
+          4
+        \end{array}
+      \right]\right| = \frac{1}{2}\left|\left[
+        \begin{array}{r}
+          6\\
+          -18\\
+          6
+        \end{array}
+      \right]\right| = 3\sqrt{11}
+  \]
+  である．同様に，三角形 OAC, OBC, ABC の面積はそれぞれ
+  \[
+    \frac{1}{2}\left| \vec{OA} \times \vec{OC}\right| = \frac{3\sqrt{3}}{2}, \quad
+    \frac{1}{2}\left| \vec{OB} \times \vec{OC}\right| = \sqrt{35}, \quad
+    \frac{1}{2}\left| \vec{AB} \times \vec{AC}\right| = \frac{\sqrt{1043}}{2}
+  \]
+  である．よって，四面体 OABC の表面積は
+  $3\sqrt{11} + \frac{3\sqrt{3}}{2} + \sqrt{35} +
+  \frac{\sqrt{1043}}{2}$.
+
+  
+\item
+  \begin{enumerate}[(1)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $\bm{b}_1= \bm{a}_1=\left[
+      \begin{array}{r}
+        1\\
+        1\\
+        2
+      \end{array}
+      \right]$ である．$\left[ g_{ij} \right] = \left[
+      \begin{array}{ccc}
+        6 & 3 & 6\\
+        3 & 2 & 3\\
+        6 & 3 & 9
+      \end{array}
+    \right]$ なので
+    \[
+      \begin{aligned}
+        \bm{b}_2 &= \left|
+                   \begin{array}{cc}
+                     6 & 3\\
+                     \bm{a}_1 & \bm{a}_2
+                   \end{array}
+                   \right| = -3\bm{a}_1 + 6\bm{a}_2 = \left[
+                   \begin{array}{r}
+                     3\\
+                     -3\\
+                     0
+                   \end{array}
+                   \right],\\
+        \bm{b}_3 &= \left|
+                   \begin{array}{ccc}
+                     6 & 3 & 6\\
+                     3 & 2 & 3\\
+                     \bm{a}_1 & \bm{a}_2 & \bm{a}_3
+                   \end{array}
+                   \right| = -3\bm{a}_1 + 3\bm{a}_3 = \left[
+                   \begin{array}{r}
+                     3\\
+                     3\\
+                     -3
+                   \end{array}
+                   \right].
+      \end{aligned}
+    \]
+      
+    \item $B=\left[
+        \begin{array}{rrr}
+          6 & 0 & 0\\
+          0 & 18 & 0\\
+          0 & 0 & 27
+        \end{array}
+      \right]$
+  \end{enumerate}
 \end{enumerate}
 
 
